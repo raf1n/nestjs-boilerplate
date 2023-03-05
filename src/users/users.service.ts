@@ -14,13 +14,13 @@ export class UsersService {
   ) {}
 
   async register(registerUserDto: {
-    firstName: string;
-    lastName: string;
+    userId: string;
     email: string;
+    fullName: string;
   }) {
     const result = await this.userModel.create({
-      firstName: registerUserDto.firstName,
-      lastName: registerUserDto.lastName,
+      userId: registerUserDto.userId,
+      fullName: registerUserDto.fullName,
       email: registerUserDto.email,
     });
     return result;
@@ -56,5 +56,9 @@ export class UsersService {
     return {
       access_token: accessToken,
     };
+  }
+
+  findAll() {
+    return this.userModel.find();
   }
 }

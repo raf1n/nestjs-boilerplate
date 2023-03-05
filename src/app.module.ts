@@ -10,7 +10,7 @@ import { MongooseModule } from "@nestjs/mongoose";
     UsersModule,
     ConfigModule.forRoot(),
     MongooseModule.forRoot(
-      "mongodb+srv://rafin:CHoOPq3tTfzNx1DM@cluster0.khgm0kt.mongodb.net/?retryWrites=true&w=majority/serverDeployTest/users"
+      "mongodb+srv://rafin:CHoOPq3tTfzNx1DM@cluster0.khgm0kt.mongodb.net/test"
     ),
   ],
   controllers: [AppController],

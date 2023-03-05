@@ -19,15 +19,20 @@ export class UsersController {
     return this.usersService.login(loginUserDto);
   }
 
-  @Post("/test_login")
+  @Post("/test")
   register(
     @Body()
     loginUserDto: {
-      firstName: string;
-      lastName: string;
+      userId: string;
       email: string;
+      fullName: string;
     }
   ) {
     return this.usersService.register(loginUserDto);
+  }
+
+  @Get("/all-users")
+  findAll() {
+    return this.usersService.findAll();
   }
 }
