@@ -1,9 +1,3 @@
 {
-  "version": 3,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "status": 307
-    }
-  ]
+  "version": 3
 }
