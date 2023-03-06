@@ -3,8 +3,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "status": 307,
-      "headers": { "Location": "https://nestjs-boilerplate-raf1n.vercel.app/" }
+      "status": 307
     }
   ]
 }
