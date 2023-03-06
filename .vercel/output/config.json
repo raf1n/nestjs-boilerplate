@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 307,
+      "headers": { "Location": "https://nestjs-boilerplate-raf1n.vercel.app/" }
+    }
+  ]
+}
